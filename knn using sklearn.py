@@ -3,6 +3,8 @@ import pandas as pd
 from sklearn import preprocessing, model_selection, neighbors
 from random import randint
 
+
+
 df = pd.read_csv('/Users/nickwalker/Desktop/Data Sets/Breast Cancer Wisconsin Data.csv')
 df.replace('?',-99999,inplace=True)
     # columns with '?' have missing values -- so put in a -99,999 in order for them to be classified and not get an error
