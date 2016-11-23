@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn import preprocessing, model_selection, neighbors
 from random import randint
 
-
+# the following code was modeled after the example found on this site: https://pythonprogramming.net/k-nearest-neighbors-application-machine-learning-tutorial/
 
 df = pd.read_csv('/Users/nickwalker/Desktop/Data Sets/Breast Cancer Wisconsin Data.csv')
 df.replace('?',-99999,inplace=True)
